@@ -1,0 +1,4 @@
+<% @value = scope['sensitive::slack_token'].unwrap %>
+<%# @value = scope['sensitive::slack_token'] %>
+
+This string should be redacted: '<%= @value -%>' 
